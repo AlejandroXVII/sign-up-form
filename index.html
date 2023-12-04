@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+    <script src="file.js" defer></script> 
     <title>Document</title>
 </head>
 <body>
@@ -41,22 +42,23 @@
                     </p>
                     <p>
                         <label for="ml">EMAIL</label>
-                        <input type="email" id="ml" name="email">
+                        <input type="email" id="ml" name="email" placeholder=" example@mail.com">
                     </p>
                     <p>
                         <label for="phone">PHONE</label>
-                        <input type="tel" id="phone" name="phone">
+                        <input type="tel" id="phone" name="phone" placeholder=" XXXX-XXX-XXXX" pattern="\([0-9]{4}\) [0-9]{3}[ -][0-9]{4}">
                     </p>
                     <p>
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" class="passwords">
                     </p>
                     <p>
                         <label for="password2">CONFIRM PASSWORD</label>
-                        <input type="password" id="password2" name="password2">
+                        <input type="password" id="password2" name="password2" class="passwords">
                     </p>
             </div>
             <div id="button-container">
+                    <p id="passwordVerificationMsj"></p>
                     <button>SUBMIT</button>
                 </form>
             </div>
